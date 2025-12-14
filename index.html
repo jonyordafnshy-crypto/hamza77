@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حمزة عماري - مهندس برمجيات</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- خلفية متحركة -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- شريط التقدم -->
+    <div class="scroll-progress"></div>
+
+    <!-- الهيدر -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span class="logo-text">حمزة عماري</span>
+                </div>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">عنّي</a>
+                    <a href="#education" class="nav-link">التعليم</a>
+                    <a href="#experience" class="nav-link">الخبرة</a>
+                    <a href="#skills" class="nav-link">المهارات</a>
+                    <a href="#projects" class="nav-link">المشاريع</a>
+                    <a href="#certifications" class="nav-link">الشهادات</a>
+                    <a href="#contact" class="nav-link">اتصل بي</a>
+                </nav>
+                <button class="download-btn" id="downloadPdf">
+                    <i class="fas fa-download"></i>
+                    <span>تحميل PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم البطولي -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="1.jpg" alt="حمزة عماري" class="profile-pic">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="hero-badge">
+                    <span>مرحباً في موقعي الشخصي</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-name">حمزة خالد عبدالله عماري</span>
+                    <span class="hero-gradient">مهندس امن سيبراني و برمجيات</span>
+                </h1>
+                <p class="hero-description" id="typewriter-text"></p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <span>شاهد أعمالي</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                        <span>اتصل بي</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">سنوات خبرة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">معدل الشهادات</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عني -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عنّي</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        أنا <strong>حمزة خالد عبدالله عماري</strong>، مهندس برمجيات متخصص في تطوير التطبيقات الآمنة. حاصل على دبلوم عالي في هندسة البرمجيات بمعدل 90% ودبلوم عالي في الأمن السيبراني بمعدل 98%. 
+                    </p>
+                    <p class="about-description">
+                        شغفي يكمن في إنشاء حلول تقنية مبتكرة تجمع بين الجمال البصري والأداء المتميز مع الحفاظ على أعلى معايير الأمان. أؤمن بالتعلم المستمر ومواكبة أحدث التقنيات.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span>حمزة خالد عبدالله عماري</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>774464694</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hamza.ammari@example.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="card-title">التطوير</h3>
+                        <p class="card-description">بناء تطبيقات ويب وتطبيقات جوال حديثة</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="card-title">الأمان</h3>
+                        <p class="card-description">تطبيق أفضل ممارسات الأمن السيبراني</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="card-title">التصميم</h3>
+                        <p class="card-description">واجهات مستخدم جذابة وسهلة الاستخدام</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="card-title">الأداء</h3>
+                        <p class="card-description">تحسين أداء التطبيقات وسرعة الاستجابة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التعليم -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">التعليم</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">دبلوم عالي في الأمن السيبراني</h3>
+                            <span class="timeline-badge">معدل 98%</span>
+                        </div>
+                        <p class="timeline-subtitle">أكاديمية التميز في الأمن السيبراني</p>
+                        <p class="timeline-period">2023 - 2024</p>
+                        <p class="timeline-description">
+                            تخصص متقدم في أمن الشبكات، الاختراق الأخلاقي، تحليل الثغرات الأمنية، وتطوير أنظمة الحماية المتقدمة.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">أمن الشبكات</span>
+                            <span class="tag">الاختراق الأخلاقي</span>
+                            <span class="tag">تحليل الثغرات</span>
+                            <span class="tag">التشفير</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">دبلوم عالي في هندسة البرمجيات</h3>
+                            <span class="timeline-badge">معدل 90%</span>
+                        </div>
+                        <p class="timeline-subtitle">المعهد التقني المتقدم</p>
+                        <p class="timeline-period">2021 - 2023</p>
+                        <p class="timeline-description">
+                            تخصص في هندسة البرمجيات، تطوير الويب، قواعد البيانات المتقدمة، وهندسة البرمجيات - مع مشاريع تطبيقية متقدمة.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">هندسة البرمجيات</span>
+                            <span class="tag">تطوير الويب</span>
+                            <span class="tag">قواعد البيانات</span>
+                            <span class="tag">هندسة النظم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- قسم الخبرة -->
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">الخبرة العملية</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">مهندس برمجيات متقدم</h3>
+                        <span class="timeline-period">2023 - الآن</span>
+                    </div>
+                    <p class="timeline-subtitle">شركة التقنية الذكية</p>
+                    <ul class="timeline-list">
+                        <li><i class="fas fa-chevron-left"></i> تطوير تطبيقات ويب معقدة باستخدام React وNode.js</li>
+                        <li><i class="fas fa-chevron-left"></i> تصميم وتنفيذ أنظمة أمنية خفضت الهجمات بنسبة 70%</li>
+                        <li><i class="fas fa-chevron-left"></i> قيادة فريق تطوير مكون من 5 مهندسين</li>
+                        <li><i class="fas fa-chevron-left"></i> تحسين أداء التطبيقات بنسبة 85%</li>
+                        <li><i class="fas fa-chevron-left"></i> تطوير واجهات برمجة تطبيقات (APIs) آمنة</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">محلل أمن سيبراني</h3>
+                        <span class="timeline-period">2022 - 2023</span>
+                    </div>
+                    <p class="timeline-subtitle">مركز الحماية الرقمية</p>
+                    <ul class="timeline-list">
+                        <li><i class="fas fa-chevron-left"></i> إجراء اختبارات اختراق لـ 20+ تطبيق وتحديد الثغرات</li>
+                        <li><i class="fas fa-chevron-left"></i> تحليل وتقييم مخاطر الأمن السيبراني للشركات</li>
+                        <li><i class="fas fa-chevron-left"></i> تطوير سياسات أمنية معتمدة من ISO 27001</li>
+                        <li><i class="fas fa-chevron-left"></i> تدريب فرق التطوير على البرمجة الآمنة</li>
+                        <li><i class="fas fa-chevron-left"></i> مراقبة الشبكات واكتشاف التهديدات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المهارات والخبرات</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="category-title">لغات البرمجة</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript/TypeScript</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="95"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="92"></div>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="98"></div>
+                            </div>
+                            <span class="skill-percentage">98%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-title">الأطر والأدوات</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="96"></div>
+                            </div>
+                            <span class="skill-percentage">96%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="92"></div>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="88"></div>
+                            </div>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="94"></div>
+                            </div>
+                            <span class="skill-percentage">94%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="category-title">الأمن السيبراني</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">أمن الشبكات</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="92"></div>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">الاختراق الأخلاقي</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">التشفير</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="94"></div>
+                            </div>
+                            <span class="skill-percentage">94%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">تحليل الثغرات</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="91"></div>
+                            </div>
+                            <span class="skill-percentage">91%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">إدارة الهوية</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="88"></div>
+                            </div>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="category-title">اللغات</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">العربية</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="100"></div>
+                            </div>
+                            <span class="skill-percentage">اللغة الأم</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">الإنجليزية</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="95"></div>
+                            </div>
+                            <span class="skill-percentage">متمكن</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">الفرنسية</span>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-level="80"></div>
+                            </div>
+                            <span class="skill-percentage">متقدم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المشاريع</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="2.jpg" alt="نظام إدارة الأمن">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">معاينة المشروع</button>
+                        </div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="project-title">نظام إدارة الأمن السيبراني</h3>
+                    <p class="project-description">
+                        منصة متكاملة لمراقبة وتحليل تهديدات الأمن السيبراني في الوقت الحقيقي مع أنظمة إنذار متقدمة.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-features">
+                        <span class="feature">مراقبة في الوقت الحقيقي</span>
+                        <span class="feature">تحليل السلوك</span>
+                        <span class="feature">تقارير تلقائية</span>
+                        <span class="feature">إنذارات فورية</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i>
+                            معاينة
+                        </button>
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            الكود
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="3.jpg" alt="تطبيق البنك الآمن">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">معاينة المشروع</button>
+                        </div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="project-title">تطبيق البنك الآمن</h3>
+                    <p class="project-description">
+                        تطبيق مصرفي مع إجراءات أمنية متقدمة وحماية شاملة للمعاملات باستخدام أحدث تقنيات التشفير.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">التشفير</span>
+                    </div>
+                    <div class="project-features">
+                        <span class="feature">المصادقة الثنائية</span>
+                        <span class="feature">التشفير من طرف إلى طرف</span>
+                        <span class="feature">كشف الاحتيال</span>
+                        <span class="feature">بيومتري</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i>
+                            معاينة
+                        </button>
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            الكود
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="4.jpg" alt="منصة التعليم">
+                        <div class="project-overlay">
+                            <button class="project-view-btn">معاينة المشروع</button>
+                        </div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="project-title">منصة التعليم الإلكتروني</h3>
+                    <p class="project-description">
+                        نظام تعليمي متكامل مع إدارة محتوى تفاعلي وتقنيات حماية متقدمة للمحتوى التعليمي.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="project-features">
+                        <span class="feature">فصول افتراضية</span>
+                        <span class="feature">تقييم آلي</span>
+                        <span class="feature">حماية المحتوى</span>
+                        <span class="feature">تفاعل حي</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i>
+                            معاينة
+                        </button>
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            الكود
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الشهادات المهنية</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">CompTIA Security+</h3>
+                        <p class="cert-issuer">CompTIA</p>
+                        <p class="cert-description">
+                            شهادة شاملة في الأمن السيبراني تغطي أمن الشبكات، التشفير، وإدارة المخاطر - معدل 98%
+                        </p>
+                        <div class="cert-meta">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تم الإصدار: يناير 2024</span>
+                        </div>
+                    </div>
+                    <span class="cert-badge">نشط</span>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Certified Ethical Hacker (CEH)</h3>
+                        <p class="cert-issuer">EC-Council</p>
+                        <p class="cert-description">
+                            شهادة مهنية في الاختراق الأخلاقي وتقنيات اختبار الاختراق المتقدمة
+                        </p>
+                        <div class="cert-meta">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تم الإصدار: مارس 2024</span>
+                        </div>
+                    </div>
+                    <span class="cert-badge">نشط</span>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">تطوير تطبيقات الويب الكاملة</h3>
+                        <p class="cert-issuer">Udemy</p>
+                        <p class="cert-description">
+                            تدريب متقدم في React، Node.js، MongoDB، وممارسات تطوير الويب الحديثة
+                        </p>
+                        <div class="cert-meta">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تم الإصدار: ديسمبر 2023</span>
+                        </div>
+                    </div>
+                    <span class="cert-badge">مكتمل</span>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">OWASP Top 10 والبرمجة الآمنة</h3>
+                        <p class="cert-issuer">OWASP Foundation</p>
+                        <p class="cert-description">
+                            شهادة في أمن تطبيقات الويب وممارسات البرمجة الآمنة وفق معايير OWASP
+                        </p>
+                        <div class="cert-meta">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تم الإصدار: نوفمبر 2023</span>
+                        </div>
+                    </div>
+                    <span class="cert-badge">نشط</span>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">أساسيات أمن السحابة</h3>
+                        <p class="cert-issuer">Cloud Security Alliance</p>
+                        <p class="cert-description">
+                            شهادة تغطي أمن البنية التحتية السحابية ومعايير الامتثال والأمان
+                        </p>
+                        <div class="cert-meta">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تم الإصدار: أكتوبر 2023</span>
+                        </div>
+                    </div>
+                    <span class="cert-badge">نشط</span>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Scrum Master محترف (PSM I)</h3>
+                        <p class="cert-issuer">Scrum.org</p>
+                        <p class="cert-description">
+                            شهادة في منهجية Agile وإطار العمل Scrum للتعاون الفعال وإدارة المشاريع
+                        </p>
+                        <div class="cert-meta">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تم الإصدار: سبتمبر 2023</span>
+                        </div>
+                    </div>
+                    <span class="cert-badge">نشط</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">اتصل بي</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        أنا دائماً مهتم بسماع الفرص والمشاريع الجديدة. لا تتردد في التواصل من خلال أي من القنوات أدناه.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:hamza.ammari@example.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <p class="method-title">البريد الإلكتروني</p>
+                                <p class="method-detail">hamza.ammari@example.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:774464694" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <p class="method-title">الهاتف</p>
+                                <p class="method-detail">774464694</p>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/hamza-ammari" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <p class="method-title">LinkedIn</p>
+                                <p class="method-detail">linkedin.com/in/hamza-ammari</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/hamza-ammari" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <p class="method-title">GitHub</p>
+                                <p class="method-detail">github.com/hamza-ammari</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">أرسل لي رسالة</h3>
+                        <div class="form-group">
+                            <label for="name" class="form-label">الاسم</label>
+                            <input type="text" id="name" class="form-input" placeholder="اسمك الكريم" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" id="email" class="form-input" placeholder="بريدك@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">الرسالة</label>
+                            <textarea id="message" class="form-textarea" placeholder="رسالتك هنا..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>إرسال الرسالة</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="logo-text">حمزة عماري</span>
+                    </div>
+                    <p class="footer-description">
+                        مهندس برمجيات ومتخصص أمن سيبراني
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">عنّي</a></li>
+                        <li><a href="#skills">المهارات</a></li>
+                        <li><a href="#contact">اتصل بي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">التواصل الاجتماعي</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/hamza-ammari" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/hamza-ammari" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:hamza.ammari@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 حمزة خالد عبدالله عماري - جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- السكريبتات -->
+    <script src="script.js"></script>
+</body>
+</html>
